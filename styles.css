@@ -35,6 +35,12 @@ header p {
   margin-bottom: 20px;
   opacity: 0.8;
 }
+header nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 nav a {
   margin: 0 15px;
   color: #ffd369;
@@ -44,6 +50,18 @@ nav a {
 }
 nav a:hover {
   color: #fff;
+}
+nav a:last-child {
+  background: #ffd369;
+  color: #1e3c72;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: background 0.3s;
+}
+nav a:last-child:hover {
+  background: #e6c157;
 }
 
 /* Section styling */
@@ -135,3 +153,4 @@ footer a:hover {
     padding: 10px;
   }
 }
+
