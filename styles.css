@@ -1,72 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prabhnoor Singh - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Prabhnoor Singh</h1>
-      <p>Computer Science Student & AI Enthusiast</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="assets/Prabhnoor_Singh_CV.pdf" target="_blank">Download CV</a>
-      </nav>
-    </div>
-  </header>
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a Computer Science student at GISMA University in Berlin with a strong interest in AI, large language models, and software development. I enjoy building projects and learning new technologies.</p>
-    </div>
-  </section>
+/* Header */
+header {
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+nav a {
+  margin: 0 15px;
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #fff;
+}
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Python, C, JavaScript, HTML, CSS</li>
-        <li>Machine Learning (TensorFlow, PyTorch, scikit-learn)</li>
-        <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
-        <li>Web Development (Flask, React basic)</li>
-        <li>Tools: Git, GitHub, LaTeX, Docker</li>
-      </ul>
-    </div>
-  </section>
+/* Section styling */
+.section {
+  background: #fff;
+  padding: 40px 0;
+  margin: 20px 0;
+  border-left: 5px solid #2a5298;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+.section:hover {
+  transform: translateY(-5px);
+}
+.section h2 {
+  margin-bottom: 20px;
+  color: #1e3c72;
+  position: relative;
+}
+.section h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #ffd369;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+ul {
+  list-style: disc inside;
+}
+li {
+  margin-bottom: 10px;
+}
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>LLM Chatbot</h3>
-        <p>A chatbot built using Hugging Face transformers and Flask, deployed on Heroku.</p>
-      </div>
-      <div class="project">
-        <h3>Image Generator</h3>
-        <p>Stylized image generator using Stable Diffusion pipelines.</p>
-      </div>
-      <div class="project">
-        <h3>Auto-Reporting Tool</h3>
-        <p>Python script for parsing CSV data and generating PDF reports using ReportLab.</p>
-      </div>
-    </div>
-  </section>
+/* Project and Experience Cards */
+.project,
+.experience {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 4px solid #ffd369;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+.project:hover,
+.experience:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.project h3,
+.experience h3 {
+  color: #2a5298;
+  margin-bottom: 10px;
+}
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Prabhnoor Singh</p>
-      <p>
-        <a href="https://github.com/prabhnoorsingh" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/prabhnoor-singh-b290981aa" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </footer>
-</body>
-</html>
+/* Footer */
+footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+footer a {
+  color: #ffd369;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #fff;
+}
 
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .section {
+    padding: 20px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
