@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabhnoor Singh - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Prabhnoor Singh</h1>
+      <p>Computer Science Student & AI Enthusiast</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="assets/Prabhnoor_Singh_CV.pdf" target="_blank">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student at GISMA University in Berlin with a strong interest in AI, large language models, and software development. I enjoy building projects and learning new technologies.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Python, C, JavaScript, HTML, CSS</li>
+        <li>Machine Learning (TensorFlow, PyTorch, scikit-learn)</li>
+        <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
+        <li>Web Development (Flask, React basic)</li>
+        <li>Tools: Git, GitHub, LaTeX, Docker</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>LLM Chatbot</h3>
+        <p>A chatbot built using Hugging Face transformers and Flask, deployed on Heroku.</p>
+      </div>
+      <div class="project">
+        <h3>Image Generator</h3>
+        <p>Stylized image generator using Stable Diffusion pipelines.</p>
+      </div>
+      <div class="project">
+        <h3>Auto-Reporting Tool</h3>
+        <p>Python script for parsing CSV data and generating PDF reports using ReportLab.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Prabhnoor Singh</p>
+      <p>
+        <a href="https://github.com/prabhnoorsingh" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/prabhnoor-singh-b290981aa" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
 
