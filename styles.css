@@ -23,7 +23,7 @@ body {
 header {
   background: linear-gradient(120deg, #1e3c72, #2a5298);
   color: #fff;
-  padding: 40px 0 80px; /* extra bottom padding for button */
+  padding: 40px 0 80px;
   text-align: center;
 }
 .profile-img {
@@ -48,7 +48,7 @@ header {
   font-size: 1em;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, background 0.3s ease;
-  margin-bottom: 30px; /* space before name */
+  margin-bottom: 30px;
 }
 .download-btn:hover {
   background: #e6c157;
@@ -65,7 +65,7 @@ header h1 {
 header p {
   font-size: 1.2em;
   opacity: 0.8;
-  margin-bottom: 30px; /* space before nav */
+  margin-bottom: 30px;
 }
 
 /* Main Navigation */
@@ -143,6 +143,13 @@ li {
   margin-bottom: 10px;
 }
 
+/* FIX: Neutralize bold text color inside experience */
+.experience strong,
+.experience b {
+  color: inherit;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   background: #1e3c72;
@@ -164,16 +171,7 @@ footer a:hover {
 /* Responsive */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2em;
-  }
-  .main-nav a {
-    display: block;
-    margin: 10px 0;
-  }
-  .section {
-    padding: 20px;
-  }
-  .container {
-    padding: 10px;
+    font-siz
+
   }
 }
