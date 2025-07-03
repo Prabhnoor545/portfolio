@@ -144,10 +144,17 @@ li {
 }
 
 /* FIX: Neutralize bold text color inside experience */
-.experience strong,
-.experience b {
-  color: inherit;
+.experience * {
+  color: #333;
+  font-weight: normal;
+}
+
+.experience h3,
+.experience h4,
+.experience strong {
+  color: #2a5298;
   font-weight: bold;
+}
 }
 
 /* Footer */
